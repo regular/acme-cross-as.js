@@ -23,12 +23,12 @@ lib/_acme.js: build/acme.bc
 	--memory-init-file 0 \
 	--llvm-lto 3 \
 	-s AGGRESSIVE_VARIABLE_ELIMINATION=1
-	echo "module.exports = exports;" >> lib/_llvm-as.js
+	echo "module.exports = exports;" >> lib/_acme.js
 
 clean:
 	rm lib/_acme.js*
 
 .PHONY: test
 test: lib/_acme.js
-	#cp lib/_llvm-as.js.mem test
+	#cp lib/_acme.js.mem test
 	cd test && cat test.js|$(BIN)/brfs|$(BIN)/browserify - --noparse=$(shell pwd)/lib/_acme.js | $(BIN)/testling -u
