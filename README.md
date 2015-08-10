@@ -16,7 +16,7 @@ https://www.mirrorservice.org/sites/ftp.cs.vu.nl/pub/minix/distfiles/backup/acme
 
 ## Usage
 
-    var as = require('acme');
+    var as = require('acme-cross-assembler');
     var fs = require('fs');
 
     var source = fs.readFileSync(__dirname + '/../acme091/examples/ddrv.a', 'utf8');
