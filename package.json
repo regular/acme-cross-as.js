@@ -36,5 +36,16 @@
     "assembler",
     "acme",
     "cross assembler"
-  ]
+  ],
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/regular/acme-cross-as.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/regular/acme-cross-as.js/issues"
+  },
+  "homepage": "https://github.com/regular/acme-cross-as.js#readme"
 }
