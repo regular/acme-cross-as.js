@@ -40,7 +40,7 @@
 
 !if type = 64 {
 	*=$c000
-	!to "ddrv64.prg", cbm
+	;!to "ddrv64.prg", cbm
 	VIC_Base	= $d000
 } else {
 	*=$0c00
