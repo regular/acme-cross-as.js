@@ -1,6 +1,6 @@
-CFLAGS		= -O3 -Wall
+#CFLAGS		= -O3 -Wall
 #LIBS		= -lm
-CC		= gcc
+#CC		= gcc
 RM		= rm
 
 #SRC		=
@@ -13,9 +13,6 @@ all: $(PROGS)
 
 acme: acme.o alu.o cliargs.o cpu.o dynabuf.o encoding.o flow.o global.o input.o label.o macro.o mnemo.o output.o platform.o section.o tree.o
 	$(CC) $(LIBS) $(CFLAGS) -o acme acme.o alu.o cliargs.o cpu.o dynabuf.o encoding.o flow.o global.o input.o label.o macro.o mnemo.o output.o platform.o section.o tree.o
-	strip acme
-
-
 
 acme.o: config.h acme.h alu.h cpu.h dynabuf.h encoding.h flow.h global.h input.h label.h macro.h mnemo.h output.h platform.h section.h acme.h acme.c
 
